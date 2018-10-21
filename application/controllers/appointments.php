@@ -22,7 +22,7 @@ class Appointments extends CI_Controller
             'required|min_length[5]|max_length[20]');
         $this->form_validation->set_rules('mobile', 'Mobile', 'max_length[20]');
         $this->form_validation->set_rules('gender', 'Gender', 'required');
-        $this->form_validation->set_rules('status', 'Patients Status', 'required');
+        $this->form_validation->set_rules('status', 'Appointment Status', 'required');
         $this->form_validation->set_rules('clinic', 'Clinic', 'required');
         $this->form_validation->set_rules('date', 'Date', 'required');
         $this->form_validation->set_rules('cost', 'Cost', 'is_numeric');
